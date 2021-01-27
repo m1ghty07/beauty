@@ -1,15 +1,230 @@
 <!DOCTYPE html>
 <html lang="ru">
+
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <title>Document</title>
   <link rel="stylesheet" href="css/style.min.css">
 </head>
-<body>
-  
 
+<body>
+
+  <header class="header">
+    <div class="container">
+      <div class="header__inner">
+        <a class="header__logo" href="#">
+          <img class="logo__img" src="images/logo1.png" alt="logo">
+          <img src="images/name.svg" alt="name" class="logo__name">
+        </a>
+        <nav class="menu">
+          <ul class="menu__list">
+            <li class="menu__item">
+              <a href="" class="menu__link">Салон</a>
+            </li>
+            <li class="menu__item">
+              <a href="" class="menu__link">Учебный центр</a>
+            </li>
+            <li class="menu__item">
+              <a href="" class="menu__link">Акции</a>
+            </li>
+            <li class="menu__item">
+              <a href="" class="menu__link">Контакты</a>
+            </li>
+          </ul>
+        </nav>
+        <div class="header__social">
+          <a class="header__link" href="#">
+            <img src="images/inst.svg" alt="instagramm" class="header__img">
+          </a>
+          <a class="header__link" href="#">
+            <img src="images/fb.svg" alt="facebook" class="header__img">
+          </a>
+          <a class="header__link" href="#">
+            <img src="images/vk.svg" alt="vk" class="header__img">
+          </a>
+        </div>
+      </div>
+    </div>
+  </header>
+
+  <main class="main">
+    <section class="top">
+      <div class="top__inner">
+        <div class="container">
+          <div class="top__content">
+            <div class="top__title">
+              <p>создай свой имидж</p>
+              <span>прической</span>
+            </div>
+            <div class="top__text">
+              <p>Наш салон рад открыть свои двери перед ценителями прекрасного!</p>
+            </div>
+            <div class="top__info">
+              <div class="top__info-item">
+                <p>телефон<br>
+                  +7-995-923-23-71</p>
+              </div>
+              <div class="top__info-item">
+                <p>время работы<br>
+                  вт-вс 8:30-23:00</p>
+              </div>
+              <div class="top__info-item">
+                <p>г. Москва,<br>
+                  ул. 16-я Парковая, дом 43</p>
+              </div>
+            </div>
+            <button class="top__btn" type="button">
+              ЗАПИСАТЬСЯ
+            </button>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <section class="services">
+      <div class="container">
+        <div class="services__inner">
+          <div class="services__title">
+            Наши <span>услуги</span>
+          </div>
+          <div class="services__items">
+            <div class="services__item">
+              <div class="services__icon">
+                <svg class="icon" width="62">
+                  <use xlink:href="images/sprites.svg#woman"></use>
+                </svg>
+              </div>
+              <div class="services__text">
+                <p>женские стрижки</p>
+              </div>
+              <div class="services__description">
+                <p>Улучшите свой внешний вид с помощью наших профессиональных услуг по стрижке и укладке волос</p>
+              </div>
+            </div>
+            <div class="services__item">
+              <div class="services__icon">
+                <svg class="icon" width="71">
+                  <use xlink:href="images/sprites.svg#color"></use>
+                </svg>
+              </div>
+              <div class="services__text">
+                <p>окрашивание</p>
+              </div>
+              <div class="services__description">
+                <p>Цвет волос, как и стрижка, поможет быстро и радикально изменить образ — причем независимо от техники
+                  окрашивания</p>
+              </div>
+            </div>
+            <div class="services__item">
+              <div class="services__icon">
+                <svg class="icon" width="45">
+                  <use xlink:href="images/sprites.svg#men"></use>
+                </svg>
+              </div>
+              <div class="services__text">
+                <p>мужская стрижка</p>
+              </div>
+              <div class="services__description">
+                <p>Для мужчин стало очень важно знать, как они выглядят, какое мнение о них складывается у окружающих
+                </p>
+              </div>
+            </div>
+            <div class="services__item">
+              <div class="services__icon">
+                <svg class="icon" width="70">
+                  <use xlink:href="images/sprites.svg#manik"></use>
+                </svg>
+              </div>
+              <div class="services__text">
+                <p>маникюр и педикюр</p>
+              </div>
+              <div class="services__description">
+                <p>Побалуйте себя нашими услугами маникюра и педикюра, которые принесут сенсационные результаты</p>
+              </div>
+            </div>
+            <div class="services__item">
+              <div class="services__icon">
+                <svg class="icon" width="62">
+                  <use xlink:href="images/sprites.svg#makija"></use>
+                </svg>
+              </div>
+              <div class="services__text">
+                <p>макияж</p>
+              </div>
+              <div class="services__description">
+                <p>Наши специалисты по макияжу сделают так, чтобы вы выглядели наилучшим образом</p>
+              </div>
+            </div>
+            <div class="services__item">
+              <div class="services__icon">
+                <svg class="icon" width="80">
+                  <use xlink:href="images/sprites.svg#pircing"></use>
+                </svg>
+              </div>
+              <div class="services__text">
+                <p>пирсинг</p>
+              </div>
+              <div class="services__description">
+                <p>Прокалывание ушей производится с помощью специального пистолета. Изделия для пирсинга выполнены из
+                  медицинской стали</p>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <section class="choise">
+      <div class="container">
+        <div class="choise__inner">
+          <div class="choise__title">
+            почему
+            <span>выбирают нас</span>
+          </div>
+          <div class="choise__text">
+            <p>Мы работаем для того, чтобы делать мир красивее, а вас, наши дорогие посетители,
+              еще и счастливее.</p>
+            <p>Стилисты салона красоты Элита знают, как сделать образ уникальным с помощью одной лишь прически. В этом
+              месте вам
+              предложат различные виды укладок, окрашивания и стрижек.</p>
+            <p>Наши клиенты ценят наш уровень обслуживания, мастерство наших стилистов, а также наш профессиональный
+              подход
+              ко всему, что мы делаем.</p>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <section class="slider">
+      <div class="container">
+        <div class="slider__inner">
+          <div class="slider__item">
+            <img class="slider__img" src="images/slider.jpg" alt="">
+          </div>
+          <div class="slider__item">
+            <img class="slider__img" src="images/slider.jpg" alt="">
+          </div>
+          <div class="slider__item">
+            <img class="slider__img" src="images/slider.jpg" alt="">
+          </div>
+          <div class="slider__item">
+            <img class="slider__img" src="images/slider.jpg" alt="">
+          </div>
+          <div class="slider__item">
+            <img class="slider__img" src="images/slider.jpg" alt="">
+          </div>
+          <div class="slider__item">
+            <img class="slider__img" src="images/slider.jpg" alt="">
+          </div>
+        </div>
+      </div>
+    </section>
+
+
+  </main>
 
   <script src="js/main.min.js"> </script>
 </body>
+
 </html>
