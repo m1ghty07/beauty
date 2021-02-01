@@ -151,7 +151,7 @@
 }
 
 .services {
-  margin: -150px 0 100px;
+  margin: -182px 0 100px;
   &__inner {
     text-align: center;
     box-shadow: 0px -10px 30px rgba(0, 0, 0, 0.2);
@@ -270,73 +270,108 @@
 }
 
 .slider {
+  margin-bottom: 100px;
   &__inner {
-    width: 960px;
-    margin: 20px auto;
-    padding: 20px;
+    align-items: center;
+    display: flex;
+    padding: 0 50px;
+  }
+
+  &__item {
+    width: 150px;
+    height: 150px;
+    padding: 0 15px;
+    margin: 110px 0;
+
+    & img {
+      filter: grayscale(100%);
+      width: 150px;
+      height: 150px;
+      transition: all 0.3s ease;
+    }
+  }
+  .slick-slide.slick-current.slick-active.slick-center {
+    .slider__item img {
+      transform: scale(2.1);
+      filter: grayscale(0%);
+    }
+  }
+  .slick-prev,
+  .slick-next {
+    flex-shrink: 0;
+    width: 60px;
+    height: 60px;
+    border: none;
+    border-radius: 50%;
+    background: #dddddd;
+    font-size: 0;
     position: relative;
   }
+  .slick-next {
+    margin-left: 30px;
+  }
+  .slick-prev {
+   margin-right: 30px;
+    z-index: 99;
+  }
+  .slick-next::before {
+    content: "";
+    background-image: url(../images/arrow.svg);
+    position: absolute;
+    background-repeat: no-repeat;
+    top: 21px;
+    right: 19px;
+    width: 15px;
+    height: 15px;
+  }
+
+  .slick-prev::before {
+    content: "";
+    background-image: url(../images/arrow.svg);
+    position: absolute;
+    background-repeat: no-repeat;
+    top: 21px;
+    right: 26px;
+    width: 15px;
+    height: 15px;
+    transform: matrix(-1, 0, 0, 1, 0, 0);
+  }
+}
+
+.slider-bottom {
+  margin-bottom: 100px;
   &__item {
-    padding: 0 10px;
+    padding: 44px;
+    max-width: 500px;
+    min-height: 376px;
+    box-shadow: 0px 20px 40px rgba(0, 0, 0, 0.2);
+    border-radius: 10px;
+    font-family: "San Francisco Pro";
+    font-size: 18px;
+    line-height: 21px;
+    color: #9d9d9d;
+  }
+  &__text {
+    margin-bottom: 7px;
+    max-width: 400px;
+  }
+  &__user {
+    display: flex;
+    justify-content: flex-start;
   }
   &__img {
-    transition: all 0.3s ease;
-    width: 100%;
-    height: 160px;
-    margin: 30px 0;
-    transition: all 0.3s;
+    margin-right: 43px;
   }
-}
-.slick-prev,
-.slick-next {
-  width: 60px;
-  height: 60px;
-  border: none;
-  border-radius: 50%;
-  background: #dddddd;
-  font-size: 0;
-  position: relative;
-}
-.slick-next {
-  position: absolute;
-  top: 65px;
-  right: 0;
-}
-.slick-prev {
-  position: absolute;
-  top: 65px;
-  left: 0;
-  z-index: 99;
-}
-.slick-next::before {
-  content: "";
-  background-image: url(../images/arrow.svg);
-  position: absolute;
-  background-repeat: no-repeat;
-  top: 21px;
-  right: 19px;
-  width: 15px;
-  height: 15px;
-}
-
-.slick-prev::before {
-  content: "";
-  background-image: url(../images/arrow.svg);
-  position: absolute;
-  background-repeat: no-repeat;
-  top: 21px;
-  right: 26px;
-  width: 15px;
-  height: 15px;
-  transform: matrix(-1, 0, 0, 1, 0, 0);
-}
-
-.slick-slide.slick-current.slick-active.slick-center {
-  .slider__img {
-    margin: 0;
-    padding-bottom: 40px;
-    min-height: 320px;
-    max-width: initial;
+  &__bar {
+    display: flex;
+    flex-direction: column;
+  }
+  &__name {
+    margin-bottom: 15px;
+    font-weight: 600;
+    font-size: 18px;
+    line-height: 30px;
+    color: #626780;
   }
 }
 @import "media";

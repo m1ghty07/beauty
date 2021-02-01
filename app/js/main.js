@@ -1,9 +1,17 @@
 $(function () {
 
   $('.slider__inner').slick({
-    slidesToShow: 3,
+    slidesToScroll:1,
+    slidesToShow:5,
     centerMode: true,
-    speed: 500
+    centerPadding:'0px',
+  });
+});
+
+$(function () {
+
+  $("#stars").rateYo({
+    rating: 5
   });
 
 });
