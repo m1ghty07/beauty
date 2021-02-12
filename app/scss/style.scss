@@ -7,6 +7,8 @@
 .header {
   height: 140px;
   margin-bottom: 20px;
+  z-index: 999;
+  position: relative;
   &__inner {
     display: flex;
     align-items: center;
@@ -20,7 +22,7 @@
     display: flex;
   }
   &__link {
-    transition: all 0.3s;
+    transition: all 0.6s;
     & + & {
       margin-left: 20px;
     }
@@ -701,4 +703,461 @@
   }
 }
 
+.course {
+  background-image: url(../images/course/top-girl.jpg);
+  background-repeat: no-repeat;
+  background-position: right;
+  min-height: 950px;
+  &__inner {
+    background-image: url(../images/course/elipse.png);
+    height: 871px;
+    background-repeat: no-repeat;
+    background-position: top right;
+  }
+  &__title {
+    font-family: "New York Extra Large Semibold";
+    font-style: normal;
+    font-weight: 600;
+    font-size: 104px;
+    line-height: 1;
+    letter-spacing: -0.015em;
+    color: #696a86;
+    max-width: 710px;
+    margin-bottom: 59px;
+    & span {
+      font-size: 24px;
+      line-height: 1;
+      letter-spacing: -0.015em;
+      color: #000000;
+    }
+    .elipse {
+      font-size: 64px;
+      line-height: 1;
+      color: #ffffff;
+      padding: 0 5px 0 25px;
+      background-color: #cd9c76;
+      border-radius: 50%;
+      margin-right: 10px;
+    }
+    .last {
+      font-style: italic;
+      font-size: 64px;
+      line-height: 1;
+      color: #696a86;
+    }
+  }
+  &__text {
+    font-family: "San Francisco Pro";
+    font-style: normal;
+    font-weight: 600;
+    font-size: 36px;
+    line-height: 43px;
+    letter-spacing: -0.015em;
+    color: #cd9c76;
+    max-width: 500px;
+    margin-bottom: 46px;
+  }
+  &__descr {
+    font-family: "San Francisco Pro";
+    font-style: normal;
+    font-size: 22px;
+    line-height: 26px;
+    letter-spacing: -0.015em;
+    color: #000000;
+    max-width: 295px;
+    margin: 0 0 48px 41px;
+  }
+  &__btn {
+    font-family: "San Francisco Pro";
+    font-style: normal;
+    font-weight: 500;
+    font-size: 36px;
+    line-height: 43px;
+    letter-spacing: -0.015em;
+    color: #ffffff;
+    background-color: #9743b5;
+    border-radius: 20px;
+    border: none;
+    padding: 12px 60px;
+  }
+}
+
+.program {
+  background-color: #fff;
+  &__block {
+    padding: 60px 0;
+  }
+  &__text {
+    font-family: "San Francisco Pro";
+    font-style: normal;
+    font-weight: normal;
+    font-size: 26px;
+    line-height: 31px;
+    letter-spacing: -0.015em;
+    color: #000000;
+    & span {
+      font-weight: 600;
+      font-size: 32px;
+      line-height: 38px;
+    }
+    & p {
+      margin-top: 21px;
+      font-size: 22px;
+      line-height: 31px;
+    }
+  }
+  &__info {
+    display: flex;
+    margin-bottom: 105px;
+  }
+  &__descr {
+    display: flex;
+    flex-direction: column;
+    margin-left: 58px;
+    font-family: "San Francisco Pro";
+    font-style: normal;
+    font-weight: normal;
+    font-size: 26px;
+    line-height: 31px;
+    letter-spacing: -0.015em;
+    color: #000000;
+  }
+  &__img {
+    max-width: 540px;
+    min-height: 540px;
+    border-radius: 50%;
+    object-fit: contain;
+  }
+  &__descr-title {
+    font-family: "San Francisco Pro";
+    font-style: normal;
+    font-weight: normal;
+    font-size: 48px;
+    line-height: 57px;
+    letter-spacing: -0.015em;
+    color: #000000;
+    margin-bottom: 77px;
+  }
+  &__list {
+    list-style: disc !important;
+    margin-bottom: 110px !important;
+  }
+  &__time {
+    font-style: normal;
+    font-weight: normal;
+    font-size: 26px;
+    line-height: 31px;
+  }
+  &__items {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+  }
+  &__title {
+    font-family: "New York Extra Large Semibold";
+    font-style: italic;
+    font-weight: 600;
+    font-size: 36px;
+    line-height: 43px;
+    letter-spacing: -0.015em;
+    color: #696a86;
+    margin-bottom: 39px;
+  }
+  & span {
+    font-style: normal;
+    font-size: 70px;
+    line-height: 84px;
+    color: #9743b5;
+  }
+  &__icon {
+    width: 90px;
+    height: 90px;
+    border-radius: 50%;
+    background-color: #fed6bc;
+    margin-bottom: 12px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+  }
+  &__item {
+    padding: 40px 100px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+    text-align: center;
+    max-width: 386px;
+    border-right: 1px solid #828282;
+    &:last-child {
+      border-right: 0px solid #828282;
+    }
+  }
+  &__text {
+    font-family: "New York Extra Large Semibold";
+    font-style: normal;
+    font-weight: 600;
+    font-size: 30px;
+    line-height: 36px;
+    letter-spacing: -0.015em;
+    color: #000000;
+    margin-bottom: 16px;
+  }
+  &__description {
+    font-family: "San Francisco Pro";
+    font-style: normal;
+    font-weight: 400;
+    font-size: 18px;
+    line-height: 21px;
+    letter-spacing: -0.015em;
+    color: #828282;
+    max-width: 325px;
+  }
+  &__spoiler-title {
+    display: flex;
+    align-items: center;
+    font-family: "New York Extra Large Semibold";
+    font-style: normal;
+    font-weight: 600;
+    font-size: 70px;
+    line-height: 84px;
+    letter-spacing: -0.015em;
+    color: #696a86;
+  }
+  &__spoiler-title span:nth-child(2) {
+    font-family: "New York Extra Large Semibold";
+    font-style: italic;
+    font-weight: 600;
+    font-size: 36px;
+    line-height: 36px;
+    letter-spacing: -0.015em;
+    color: #696a86;
+    margin-left: 5px;
+    padding-top: 25px;
+    cursor: pointer;
+  }
+  &__spoiler-btn {
+    background-color: #9743b5;
+    width: 60px;
+    height: 60px;
+    border-radius: 50%;
+    position: relative;
+    margin-left: 20px;
+    margin-top: 20px;
+    cursor: pointer;
+    &::after,
+    &::before {
+      content: "";
+      position: absolute;
+      background-color: #fff;
+      transition: all 0.6s;
+    }
+    &::after {
+      width: 1px;
+      height: 30px;
+      top: 15px;
+      left: 30px;
+    }
+    &::before {
+      height: 1px;
+      width: 30px;
+      top: 30px;
+      left: 15px;
+    }
+  }
+  &__spoiler-body {
+    display: none;
+    font-family: "San Francisco Pro";
+    font-style: normal;
+    font-weight: normal;
+    font-size: 26px;
+    line-height: 31px;
+    letter-spacing: -0.015em;
+    color: #000000;
+    margin: 0 auto;
+    max-width: 760px;
+    & li {
+      margin-left: 25px;
+    }
+  }
+}
+
+.program__spoiler-title.active {
+  .program__spoiler-btn::after,
+  .program__spoiler-btn::before {
+    transform: rotate(225deg);
+  }
+}
+
+.numbers {
+  font-family: "New York Extra Large Semibold";
+  background-color: #9743b5;
+  width: 148px;
+  height: 148px;
+  border-radius: 50%;
+  text-align: center;
+  margin: 20px 0 0 70px;
+  &__seven {
+    font-style: italic;
+    font-weight: normal;
+    font-size: 96px;
+    line-height: 133px;
+    letter-spacing: -0.015em;
+    color: #ffffff;
+  }
+  &__null {
+    font-size: 96px;
+    line-height: 133px;
+    color: #ffffff;
+    margin-left: 20px;
+    vertical-align: top;
+  }
+  &__hours {
+    font-family: "New York Extra Large Semibold";
+    font-style: italic;
+    font-weight: 600;
+    font-size: 30px;
+    line-height: 56px;
+    color: #000000;
+    text-align: center;
+    display: inline-block;
+    margin-top: -50px;
+  }
+}
+
+.tabs {
+  &__items {
+    display: flex;
+    border-bottom: 2px solid #000;
+  }
+  &__item {
+    flex: 0 1 50%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding-bottom: 19px;
+    font-family: "San Francisco Pro";
+    font-style: normal;
+    font-weight: normal;
+    text-decoration: none;
+    font-size: 24px;
+    line-height: 29px;
+    letter-spacing: -0.015em;
+    color: rgba(0, 0, 0, 0.5);
+  }
+  .tabs__item.active {
+    color: #000;
+    border-bottom: 6px solid #000;
+  }
+}
+
+.entry {
+  background-color: #9743b5;
+  padding: 90px 0;
+  &__text {
+    font-family: "New York Extra Large Semibold";
+    font-style: italic;
+    font-weight: 600;
+    font-size: 64px;
+    line-height: 76px;
+    color: #ffffff;
+    margin-bottom: 66px;
+    & span {
+      font-style: normal;
+      font-weight: 600;
+      font-size: 104px;
+      line-height: 124px;
+    }
+    & p {
+      margin-left: 30px;
+    }
+  }
+  &__btn {
+    background-color: #ffffff;
+    border-radius: 20px;
+    border: none;
+    padding: 12px 95px;
+    font-family: "San Francisco Pro";
+    font-style: normal;
+    font-weight: 500;
+    font-size: 36px;
+    line-height: 43px;
+    color: #000000;
+    text-transform: uppercase;
+    margin: 0 auto;
+    display: block;
+  }
+}
+
+.questions {
+  background-image: url(../images/course/form-bg.jpg);
+  background-repeat: no-repeat;
+  background-position: left;
+  min-height: 950px;
+  width: 920px;
+  &__title {
+    font-family: "New York Extra Large Semibold";
+    font-style: italic;
+    font-weight: 600;
+    font-size: 36px;
+    line-height: 43px;
+    color: #696a86;
+    & span {
+      font-style: normal;
+      font-size: 70px;
+      line-height: 84px;
+    }
+  }
+  &__text {
+    font-family: "San Francisco Pro";
+    font-style: normal;
+    font-weight: normal;
+    font-size: 22px;
+    line-height: 31px;
+    color: #000000;
+    max-width: 450px;
+    margin: 0 0 60px 30px;
+  }
+  &__inner {
+    display: flex;
+  }
+  &__consult {
+    margin-left: auto;
+    width: 50%;
+  }
+  &__form {
+    padding: 20px;
+  }
+  &__input,
+  &__textarea {
+    display: block;
+    background: #ffffff;
+    border: 2px solid #696a86;
+    border-radius: 20px;
+    font-family: "San Francisco Pro";
+    font-style: normal;
+    font-weight: normal;
+    font-size: 16px;
+    line-height: 31px;
+    color: #b4b4c2;
+    padding: 10px 255px 10px 25px;
+    margin-bottom: 30px;
+  }
+  &__textarea {
+    resize: none;
+    height: 218px;
+  }
+  &__btn {
+    display: inline-block;
+    background-color: #696a86;
+    border-radius: 20px;
+    font-family: "San Francisco Pro";
+    font-style: normal;
+    font-weight: normal;
+    font-size: 26px;
+    line-height: 31px;
+    color: #ffffff;
+    padding: 12px 130px;
+    border: none;
+  }
+}
 @import "media";
