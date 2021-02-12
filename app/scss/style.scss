@@ -1160,4 +1160,278 @@
     border: none;
   }
 }
+
+.shares-top {
+  background-repeat: no-repeat;
+  background-image: url(../images/shares/shares-bg.jpg);
+  background-position: right;
+  min-height: 1550px;
+  &__title {
+    font-family: "New York Extra Large Semibold";
+    font-style: normal;
+    font-weight: 600;
+    font-size: 24px;
+    line-height: 29px;
+    color: #000000;
+    margin-bottom: 145px;
+    & span:nth-child(1) {
+      font-size: 104px;
+      line-height: 124px;
+      color: #696a86;
+      display: block;
+    }
+    & span:nth-child(2) {
+      font-size: 64px;
+      line-height: 76px;
+      color: #ffffff;
+      padding: 0 5px 0 25px;
+      background-color: #ec4040;
+      border-radius: 50%;
+    }
+    & span:nth-child(3) {
+      font-style: italic;
+      font-size: 64px;
+      line-height: 76px;
+      color: #696a86;
+    }
+  }
+  &__img {
+    width: 540px;
+    height: 540px;
+  }
+  &__text {
+    max-width: 500px;
+    margin-bottom: 50px;
+    font-family: "San Francisco Pro";
+    font-style: normal;
+    font-weight: normal;
+    font-size: 22px;
+    line-height: 26px;
+    color: #000000;
+  }
+}
+
+.call {
+  background: rgba(0, 0, 0, 0.25);
+  padding: 95px 0 120px;
+  margin-top: -230px;
+  &__text {
+    font-family: "San Francisco Pro";
+    font-style: normal;
+    font-weight: normal;
+    font-size: 26px;
+    line-height: 31px;
+    color: #000000;
+    max-width: 500px;
+    margin: 0 0 100px 30px;
+  }
+  &__btn {
+    background-color: #ffffff;
+    border-radius: 20px;
+    font-family: "San Francisco Pro";
+    font-style: normal;
+    font-weight: 500;
+    font-size: 36px;
+    line-height: 43px;
+    color: #000000;
+    border: none;
+    padding: 12px 58px;
+  }
+}
+
+.shares-bottom {
+  background-repeat: no-repeat;
+  background-image: url(../images/shares/twice.jpg);
+  background-position: right;
+  min-height: 800px;
+  &__inner {
+    padding-top: 85px;
+  }
+  &__title {
+    font-family: "New York Extra Large Semibold";
+    font-weight: 600;
+    color: #696a86;
+    & span:nth-child(1) {
+      font-style: italic;
+      font-size: 36px;
+      line-height: 43px;
+    }
+    & span:nth-child(2) {
+      font-style: normal;
+      font-size: 70px;
+      line-height: 84px;
+    }
+  }
+  &__text {
+    font-family: "San Francisco Pro";
+    font-style: normal;
+    font-weight: normal;
+    font-size: 26px;
+    line-height: 31px;
+    color: #000000;
+    margin-bottom: 75px;
+  }
+  &__list {
+    font-family: "San Francisco Pro";
+    font-style: normal;
+    font-weight: normal;
+    font-size: 26px;
+    line-height: 31px;
+    list-style: disc !important;
+    & li {
+      margin-bottom: 45px;
+      max-width: 460px;
+      margin-left: 40px;
+    }
+  }
+  &__descr {
+    font-family: "San Francisco Pro";
+    font-style: normal;
+    font-weight: normal;
+    font-size: 26px;
+    line-height: 31px;
+    color: #000;
+    max-width: 462px;
+    margin-left: 40px;
+    margin-bottom: 29px;
+  }
+  &__phone {
+    font-family: "New York Extra Large Semibold";
+    font-style: normal;
+    font-weight: 600;
+    font-size: 36px;
+    line-height: 43px;
+    color: #000000;
+    margin-left: 40px;
+  }
+}
+
+.contacts {
+  &__inner {
+    display: flex;
+  }
+  &__list {
+    width: 50%;
+    padding-left: 150px;
+  }
+  &__title {
+    max-width: 485px;
+    font-family: "New York Extra Large Semibold";
+    font-style: normal;
+    font-weight: 600;
+    font-size: 24px;
+    line-height: 29px;
+    color: #000000;
+    & span {
+      font-size: 104px;
+      line-height: 124px;
+      color: #696a86;
+    }
+    & p {
+      font-family: "San Francisco Pro";
+      font-style: normal;
+      font-weight: normal;
+      font-size: 26px;
+      line-height: 31px;
+      color: #000000;
+    }
+  }
+  &__item {
+    margin-bottom: 41px;
+    & span {
+      font-family: "San Francisco Pro";
+      font-style: normal;
+      font-weight: normal;
+      font-size: 26px;
+      line-height: 31px;
+      color: #000000;
+      display: block;
+    }
+    & a {
+      text-decoration: none;
+      font-family: "New York Extra Large Semibold";
+      font-style: normal;
+      font-weight: 600;
+      font-size: 36px;
+      line-height: 43px;
+      color: #696a86;
+    }
+  }
+  .social {
+    display: flex;
+  }
+  &__social {
+    & + & {
+      margin-left: 40px;
+    }
+  }
+  &__btn {
+    background-color: #9743b5;
+    border-radius: 20px;
+    font-family: "San Francisco Pro";
+    font-style: normal;
+    font-weight: 500;
+    font-size: 36px;
+    line-height: 43px;
+    color: #ffffff;
+    padding: 12px 105px;
+    border: none;
+    margin: 100px 0 140px;
+  }
+}
+
+.subscribe {
+  background-color: #696a86;
+  padding: 100px 0;
+  &__title {
+    font-family: "New York Extra Large Semibold";
+    font-style: normal;
+    font-weight: 600;
+    font-size: 70px;
+    line-height: 1;
+    color: #ffffff;
+    text-transform: uppercase;
+    max-width: 384px;
+    margin-bottom: 25px;
+    & span {
+      font-style: italic;
+      font-size: 36px;
+      line-height: 1;
+      text-transform: none;
+    }
+  }
+  &__text {
+    font-family: "San Francisco Pro";
+    font-style: normal;
+    font-weight: normal;
+    font-size: 26px;
+    line-height: 31px;
+    color: #ffffff;
+    max-width: 862px;
+    margin-bottom: 80px;
+  }
+  &__form {
+    display: flex;
+    justify-content: center;
+    & input {
+      background-color: #ffffff;
+      border-radius: 20px;
+      border: none;
+      padding: 18px 343px 18px 24px;
+    }
+  }
+  &__btn {
+    background: #dcc5ff;
+    border-radius: 20px;
+    border: none;
+    font-family: "San Francisco Pro";
+    font-style: normal;
+    font-weight: normal;
+    font-size: 26px;
+    line-height: 31px;
+    color: #000000;
+    padding: 12px 85px;
+    margin-left: -50px;
+  }
+}
 @import "media";
