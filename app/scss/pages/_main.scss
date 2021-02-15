@@ -1,0 +1,575 @@
+.top {
+  padding-top: 21px;
+  margin-bottom: 100px;
+  background-color: #ffd3d3;
+  &__inner {
+    background-image: url(../images/top.jpg);
+    background-repeat: no-repeat;
+    background-position: right;
+  }
+  &__title {
+    margin-bottom: 32px;
+
+    & p {
+      font-family: "New York Extra Large Semibold";
+      font-style: italic;
+      font-weight: 600;
+      font-size: 64px;
+      line-height: 76px;
+      letter-spacing: -0.015em;
+      color: #696a86;
+    }
+    & span {
+      font-style: normal;
+      font-weight: 600;
+      font-size: 104px;
+      line-height: 124px;
+      color: #9743b5;
+    }
+  }
+  &__text {
+    font-family: "San Francisco Pro";
+    font-style: normal;
+    font-weight: 600;
+    font-size: 36px;
+    line-height: 43px;
+    letter-spacing: -0.015em;
+    color: #000000;
+    max-width: 450px;
+    margin-bottom: 39px;
+  }
+  &__info {
+    font-family: "San Francisco Pro";
+    font-style: normal;
+    font-weight: normal;
+    font-size: 26px;
+    line-height: 31px;
+    color: #000000;
+  }
+  &__info-item {
+    padding-left: 60px;
+    margin-bottom: 21px;
+    position: relative;
+  }
+  &__info-item::before {
+    content: "";
+    background-image: url(../images/сlock.svg);
+    position: absolute;
+    top: 5px;
+    width: 34px;
+    height: 34px;
+    left: 0;
+  }
+
+  &__info-item:first-child::before {
+    content: "";
+    background-image: url(../images/phone.svg);
+    position: absolute;
+    top: 5px;
+    width: 40px;
+    height: 40px;
+    left: 0;
+  }
+  &__info-item:last-child {
+    margin-bottom: 42px;
+  }
+  &__info-item:last-child::before {
+    content: "";
+    background-image: url(../images/geo.svg);
+    position: absolute;
+    top: 5px;
+    width: 34px;
+    height: 50px;
+    left: 0;
+  }
+
+  &__btn {
+    background: #9743b5;
+    border-radius: 20px;
+    border: none;
+    font-family: "San Francisco Pro";
+    font-style: normal;
+    font-weight: 500;
+    font-size: 36px;
+    line-height: 43px;
+    letter-spacing: -0.015em;
+    color: #ffffff;
+    padding: 12px 105px;
+    margin-bottom: 180px;
+    cursor: pointer;
+  }
+}
+
+.services {
+  margin: -182px 0 100px;
+  &__inner {
+    text-align: center;
+    box-shadow: 0px -10px 30px rgba(0, 0, 0, 0.2);
+    border-radius: 30px;
+    background-color: #fff;
+    padding-bottom: 30px;
+  }
+  &__items {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+  }
+  &__title {
+    font-family: "New York Extra Large Semibold";
+    font-style: italic;
+    font-weight: 600;
+    font-size: 36px;
+    line-height: 43px;
+    letter-spacing: -0.015em;
+    color: #696a86;
+    margin-bottom: 39px;
+  }
+  & span {
+    font-style: normal;
+    font-size: 70px;
+    line-height: 84px;
+    color: #9743b5;
+  }
+  &__icon {
+    width: 90px;
+    height: 90px;
+    border-radius: 50%;
+    background-color: #fed6bc;
+    margin-bottom: 12px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+  }
+  &__item {
+    padding: 40px 30px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+    max-width: 386px;
+    border-bottom: 1px solid #828282;
+    border-right: 1px solid #828282;
+    &:nth-child(4),
+    &:nth-child(5),
+    &:nth-child(6) {
+      border-bottom: 0px solid #fff;
+    }
+    &:nth-child(3),
+    &:nth-child(6) {
+      border-right: 0px solid #fff;
+    }
+  }
+  &__text {
+    font-family: "New York Extra Large Semibold";
+    font-style: normal;
+    font-weight: 600;
+    font-size: 30px;
+    line-height: 36px;
+    letter-spacing: -0.015em;
+    color: #000000;
+    margin-bottom: 16px;
+  }
+  &__description {
+    font-family: "San Francisco Pro";
+    font-style: normal;
+    font-weight: 400;
+    font-size: 18px;
+    line-height: 21px;
+    letter-spacing: -0.015em;
+    color: #828282;
+    max-width: 325px;
+  }
+}
+
+.choise {
+  margin-bottom: 100px;
+  &__title {
+    max-width: 300px;
+    font-family: "New York Extra Large Semibold";
+    font-style: normal;
+    font-weight: 600;
+    font-size: 70px;
+    line-height: 1;
+    color: #9743b5;
+    margin-bottom: 80px;
+
+    & span {
+      font-style: italic;
+      font-weight: 600;
+      font-size: 36px;
+      line-height: 43px;
+      letter-spacing: -0.015em;
+      color: #696a86;
+      padding-left: 30px;
+    }
+  }
+  &__text {
+    display: flex;
+    justify-content: space-between;
+    font-family: "San Francisco Pro";
+    font-style: normal;
+    font-weight: normal;
+    font-size: 22px;
+    line-height: 26px;
+    letter-spacing: -0.015em;
+    color: #000000;
+    & p {
+      max-width: 290px;
+    }
+  }
+}
+
+.slider {
+  margin-bottom: 100px;
+  &__inner {
+    align-items: center;
+    display: flex;
+  }
+
+  &__item {
+    width: 150px;
+    height: 150px;
+    padding: 0 30px;
+    margin: 85px 0;
+
+    & img {
+      width: 150px;
+      height: 150px;
+      transition: all 0.3s ease;
+    }
+  }
+  .slick-slide.slick-current.slick-active.slick-center {
+    .slider__item img {
+      transform: scale(2.1);
+    }
+  }
+  .slick-prev,
+  .slick-next {
+    flex-shrink: 0;
+    width: 60px;
+    height: 60px;
+    border: none;
+    border-radius: 50%;
+    background: #dddddd;
+    font-size: 0;
+    position: relative;
+    cursor: pointer;
+    outline: none;
+  }
+  .slick-next::before {
+    content: "";
+    background-image: url(../images/arrow.svg);
+    position: absolute;
+    background-repeat: no-repeat;
+    top: 21px;
+    right: 19px;
+    width: 15px;
+    height: 15px;
+  }
+
+  .slick-prev::before {
+    content: "";
+    background-image: url(../images/arrow.svg);
+    position: absolute;
+    background-repeat: no-repeat;
+    top: 21px;
+    right: 26px;
+    width: 15px;
+    height: 15px;
+    transform: matrix(-1, 0, 0, 1, 0, 0);
+  }
+}
+
+.slider-bottom {
+  margin-bottom: 90px;
+
+  &__item {
+    margin: 30px 30px 100px 30px;
+    padding: 44px;
+    max-width: 500px;
+    min-height: 376px;
+    box-shadow: 0px 20px 40px rgba(0, 0, 0, 0.2);
+    border-radius: 10px;
+    font-family: "San Francisco Pro";
+    font-size: 18px;
+    line-height: 21px;
+    color: #9d9d9d;
+  }
+  &__text {
+    margin-bottom: 7px;
+    max-width: 400px;
+  }
+  &__user {
+    display: flex;
+    justify-content: flex-start;
+  }
+  &__img {
+    margin-right: 43px;
+  }
+  &__bar {
+    display: flex;
+    flex-direction: column;
+  }
+  &__name {
+    margin-bottom: 15px;
+    font-weight: 600;
+    font-size: 18px;
+    line-height: 30px;
+    color: #626780;
+  }
+  .slick-dots {
+    display: flex;
+    justify-content: center;
+    & button {
+      width: 10px;
+      height: 10px;
+      background: #e1e1e1;
+      font-size: 0;
+      border-radius: 50%;
+      border: none;
+      cursor: pointer;
+      outline: none;
+      &:not(last-child) {
+        margin-left: 10px;
+      }
+    }
+    .slick-active {
+      button {
+        background: #c4c4c4;
+      }
+    }
+  }
+}
+
+.connection {
+  padding: 40px 0 80px;
+  background-color: #9743b5;
+  &__title {
+    font-family: "New York Extra Large Semibold";
+    font-style: normal;
+    font-weight: 600;
+    font-size: 104px;
+    line-height: 1;
+    color: #fff;
+    max-width: 495px;
+    margin-bottom: 40px;
+    & span {
+      font-style: italic;
+      font-size: 64px;
+      line-height: 76px;
+    }
+    .word {
+      padding: 0 5px 0 25px;
+      font-style: normal;
+      background-color: #fff;
+      border-radius: 50%;
+      font-size: 64px;
+      line-height: 1.1;
+      color: #000000;
+      margin-right: 10px;
+    }
+  }
+  &__text {
+    font-family: "San Francisco Pro";
+    font-style: normal;
+    font-weight: normal;
+    font-size: 36px;
+    line-height: 43px;
+    color: #ffffff;
+    max-width: 400px;
+    margin: 0 0 40px 45px;
+  }
+
+  &__form {
+    margin-bottom: 7px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+  }
+  &__input {
+    border: none;
+    background: #ffffff;
+    border-radius: 20px;
+    padding: 20px 150px 20px 24px;
+    outline: none;
+  }
+  &__btn {
+    background: #dcc4ff;
+    border-radius: 20px;
+    font-family: "San Francisco Pro";
+    font-style: normal;
+    font-weight: 500;
+    font-size: 36px;
+    line-height: 43px;
+    color: #000000;
+    padding: 8px 65px;
+    border: none;
+    margin-left: -35px;
+    cursor: pointer;
+  }
+  &__description {
+    display: flex;
+    justify-content: center;
+    font-family: "San Francisco Pro";
+    font-style: normal;
+    font-weight: normal;
+    font-size: 16px;
+    line-height: 19px;
+    color: #fff;
+    text-align: center;
+    & p {
+      max-width: 540px;
+    }
+  }
+}
+
+.practic {
+  margin-bottom: 70px;
+  &__bg {
+    background-color: #e8e6e7;
+    background-repeat: no-repeat;
+    background-image: url(../images/course.jpg);
+    background-position: left;
+    min-height: 750px;
+  }
+  &__info {
+    margin: -500px 0 0 350px;
+    background-color: #696a86;
+    padding: 40px;
+    max-width: 1000px;
+  }
+  &__title {
+    font-family: "New York Extra Large Semibold";
+    font-style: normal;
+    font-weight: 600;
+    font-size: 104px;
+    line-height: 1;
+    color: #ffffff;
+    margin-bottom: 42px;
+    & span {
+      font-style: italic;
+      font-size: 64px;
+      line-height: 76px;
+    }
+  }
+  &__text-top {
+    font-family: "San Francisco Pro";
+    font-style: normal;
+    font-weight: 600;
+    font-size: 36px;
+    line-height: 1;
+    color: #ffffff;
+    margin-bottom: 16px;
+    max-width: 780px;
+  }
+  &__text-bottom {
+    font-family: "San Francisco Pro";
+    font-style: normal;
+    font-weight: normal;
+    font-size: 26px;
+    line-height: 1;
+    color: #ffffff;
+    max-width: 800px;
+  }
+}
+
+.open {
+  &__title {
+    margin-left: 79px;
+    max-width: 750px;
+    font-family: "New York Extra Large Semibold";
+    font-style: normal;
+    font-weight: 600;
+    font-size: 70px;
+    line-height: 84px;
+    color: #9743b5;
+    margin-bottom: 88px;
+    & span {
+      font-style: italic;
+      font-weight: 600;
+      font-size: 36px;
+      line-height: 43px;
+      color: #696a86;
+      margin-left: 50px;
+    }
+  }
+  &__text {
+    font-family: "San Francisco Pro";
+    font-style: normal;
+    font-weight: 600;
+    font-size: 36px;
+    line-height: 43px;
+    color: #000000;
+    max-width: 900px;
+    margin: 0 auto 15px;
+  }
+  &__descr {
+    font-family: "San Francisco Pro";
+    font-style: normal;
+    font-weight: normal;
+    font-size: 26px;
+    line-height: 31px;
+    color: #000000;
+    margin: 0 auto;
+    max-width: 900px;
+  }
+  &__bg {
+    margin-top: -145px;
+    background-repeat: no-repeat;
+    background-image: url(../images/open.jpg);
+    background-size: cover;
+    min-height: 950px;
+  }
+}
+
+.bottom {
+  background-color: #9743b5;
+  padding: 85px 0 120px;
+  &__title {
+    font-family: "New York Extra Large Semibold";
+    font-style: normal;
+    font-weight: 600;
+    font-size: 70px;
+    line-height: 1;
+    color: #ffffff;
+    margin-bottom: 61px;
+    max-width: 580px;
+    & span {
+      font-style: italic;
+      font-size: 36px;
+      line-height: 43px;
+    }
+  }
+  &__text {
+    max-width: 522px;
+    font-family: "San Francisco Pro";
+    font-style: normal;
+    font-weight: normal;
+    font-size: 36px;
+    line-height: 43px;
+    color: #ffffff;
+    margin-bottom: 63px;
+    & span {
+      font-family: "New York Extra Large Semibold";
+      font-weight: 600;
+      font-size: 104px;
+      line-height: 1;
+      margin-left: 10px;
+    }
+  }
+  &__btn {
+    background: #ffffff;
+    border-radius: 20px;
+    font-family: "San Francisco Pro";
+    font-style: normal;
+    font-weight: 500;
+    font-size: 36px;
+    line-height: 43px;
+    text-transform: uppercase;
+    border: none;
+    padding: 11px 45px;
+    display: block;
+    margin: 0 auto;
+    cursor: pointer;
+  }
+}

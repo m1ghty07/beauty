@@ -1,0 +1,128 @@
+.contacts {
+  &__inner {
+    display: flex;
+  }
+  &__list {
+    width: 50%;
+    padding-left: 150px;
+  }
+  &__title {
+    max-width: 485px;
+    font-family: "New York Extra Large Semibold";
+    font-style: normal;
+    font-weight: 600;
+    font-size: 24px;
+    line-height: 29px;
+    color: #000000;
+    & span {
+      font-size: 104px;
+      line-height: 124px;
+      color: #696a86;
+    }
+    & p {
+      font-family: "San Francisco Pro";
+      font-style: normal;
+      font-weight: normal;
+      font-size: 26px;
+      line-height: 31px;
+      color: #000000;
+    }
+  }
+  &__item {
+    margin-bottom: 41px;
+    & span {
+      font-family: "San Francisco Pro";
+      font-style: normal;
+      font-weight: normal;
+      font-size: 26px;
+      line-height: 31px;
+      color: #000000;
+      display: block;
+    }
+    & a {
+      text-decoration: none;
+      font-family: "New York Extra Large Semibold";
+      font-style: normal;
+      font-weight: 600;
+      font-size: 36px;
+      line-height: 43px;
+      color: #696a86;
+    }
+  }
+  .social {
+    display: flex;
+  }
+  &__social {
+    & + & {
+      margin-left: 40px;
+    }
+  }
+  &__btn {
+    background-color: #9743b5;
+    border-radius: 20px;
+    font-family: "San Francisco Pro";
+    font-style: normal;
+    font-weight: 500;
+    font-size: 36px;
+    line-height: 43px;
+    color: #ffffff;
+    padding: 12px 105px;
+    border: none;
+    margin: 100px 0 140px;
+  }
+}
+
+.subscribe {
+  background-color: #696a86;
+  padding: 100px 0;
+  &__title {
+    font-family: "New York Extra Large Semibold";
+    font-style: normal;
+    font-weight: 600;
+    font-size: 70px;
+    line-height: 1;
+    color: #ffffff;
+    text-transform: uppercase;
+    max-width: 384px;
+    margin-bottom: 25px;
+    & span {
+      font-style: italic;
+      font-size: 36px;
+      line-height: 1;
+      text-transform: none;
+    }
+  }
+  &__text {
+    font-family: "San Francisco Pro";
+    font-style: normal;
+    font-weight: normal;
+    font-size: 26px;
+    line-height: 31px;
+    color: #ffffff;
+    max-width: 862px;
+    margin-bottom: 80px;
+  }
+  &__form {
+    display: flex;
+    justify-content: center;
+    & input {
+      background-color: #ffffff;
+      border-radius: 20px;
+      border: none;
+      padding: 18px 343px 18px 24px;
+    }
+  }
+  &__btn {
+    background: #dcc5ff;
+    border-radius: 20px;
+    border: none;
+    font-family: "San Francisco Pro";
+    font-style: normal;
+    font-weight: normal;
+    font-size: 26px;
+    line-height: 31px;
+    color: #000000;
+    padding: 12px 85px;
+    margin-left: -50px;
+  }
+}
